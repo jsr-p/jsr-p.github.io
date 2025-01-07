@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="slides_files/libs/clipboard/clipboard.min.js"></script>
+<script src="slides_files/libs/quarto-html/tabby.min.js"></script>
+<script src="slides_files/libs/quarto-html/popper.min.js"></script>
+<script src="slides_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="slides_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="slides_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="slides_files/libs/quarto-html/quarto-syntax-highlighting-ff4371ef257df69894857e99c6ad0d06.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.5">
+
+  <meta name="author" content="Jonas Skjold Raaschou-Pedersen">
+  <meta name="dcterms.date" content="2025-01-07">
+  <title>Nation-scale reading club session 6</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="slides_files/libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link href="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="slides_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="slides_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Nation-scale reading club session 6</h1>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Jonas Skjold Raaschou-Pedersen 
+</div>
+</div>
+</div>
+
+  <p class="date">2025-01-07</p>
+</section>
+<section id="uncertainty-embeddings" class="slide level2">
+<h2>Uncertainty Embeddings</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Standard practice to conduct statistical inference in the social and natural sciences</li>
+<li>Vast majority of applications rely exclusively on point estimates of embeddings, ignoring uncertainty</li>
+<li>Key insight: GloVe word embeddings are the optimal parameters for a multivariate normal probability model (using some clever tricks)
+<ul>
+<li>This yields a normality result for the embeddings
+<ul>
+<li>E.g. confidence bands in figure!</li>
+</ul></li>
+<li>Under reasonable assumptions, computationally tractable even on large vocabularies</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/locations.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="word-vectors" class="slide level2">
+<h2>Word vectors</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/nlpslide.png" style="width:70.0%"></p>
+<figcaption><a href="https://web.stanford.edu/class/cs224n/slides/cs224n-spr2024-lecture01-wordvecs1.pdf">cs224n slides</a></figcaption>
+</figure>
+</div>
+<ul>
+<li>Word analogies cf.&nbsp;<a href="https://proceedings.neurips.cc/paper/2013/file/9aa42b31882ec039965f3c4923ce901b-Paper.pdf">Mikolov et. al.&nbsp;2013a</a>
+<ul>
+<li>predict context based on word or vice versa (local context window methods)</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/kingqueen.png" style="width:60.0%"></p>
+<figcaption><a href="https://informatics.ed.ac.uk/sites/default/files/thumbnails/image/diagram-20190710.png">source</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="word2vec-mikolov-et.-al.-2013b" class="slide level2">
+<h2>Word2Vec (<a href="https://arxiv.org/abs/1301.3781">Mikolov et. al.&nbsp;2013b</a>)</h2>
+
+<img data-src="figs/w2vec.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="glove-pennington-et.-al.-2014" class="slide level2">
+<h2><a href="https://nlp.stanford.edu/projects/glove/">GloVe</a> (<a href="https://nlp.stanford.edu/pubs/glove.pdf">Pennington et. al.&nbsp;2014</a>)</h2>
+<ul>
+<li>Motivated by limitations of global matrix factorization methods and context window methods</li>
+<li>Global matrix factorization
+<ul>
+<li>efficiently leverage statistical information but perform poorly on word analogy task</li>
+</ul></li>
+<li>Context window methods
+<ul>
+<li>poorly utilize the statistics of the corpus; they train on separate local context windows instead of on global co-occurrence counts.</li>
+</ul></li>
+<li>GloVe
+<ul>
+<li>uses a weighted least squares model that trains on global word-word co-occurrence counts and makes efficient use of statistics</li>
+<li>moreover constructs vector space with meaningful substructure (state-of-the-art performance back then on word analogy task, beating Word2Vec)</li>
+</ul></li>
+</ul>
+</section>
+<section id="glove-from-first-principles" class="slide level2">
+<h2>GloVe from first principles</h2>
+<ul>
+<li>Let <span class="math inline">\(\mathbf{X}\)</span> be the matrix of word-word co-occurence counts; <span class="math inline">\(\mathbf{X}_{ij}\)</span> is the number of times word <span class="math inline">\(j\)</span> occurs in the context of word <span class="math inline">\(i\)</span>; <span class="math inline">\(\mathbf{X}_{i} = \sum_{k} \mathbf{X}_{ik}\)</span> be the number of times any word appears in the context of <span class="math inline">\(i\)</span>.</li>
+<li><span class="math inline">\(P_{ij} = P(j \mid i) = \mathbf{X}_{ij}/\mathbf{X}_{i}\)</span> the probability that word <span class="math inline">\(j\)</span> appear in the context of <span class="math inline">\(i\)</span>.</li>
+<li>Thermodynamic phase with <span class="math inline">\(i = ice\)</span> and <span class="math inline">\(j = steam\)</span>; ratio of their co-occurrence probabilities with various probe words, <span class="math inline">\(k\)</span>
+<ul>
+<li>Words related to ice but not steam: ratio <span class="math inline">\(P_{ik}/P_{jk}\)</span> high.</li>
+<li>Words related to steam but not ice ratio <span class="math inline">\(P_{ik}/P_{jk}\)</span> small.</li>
+<li>Words not releated to either or related to both <span class="math inline">\(P_{ik}/P_{jk} \approx 1\)</span> .</li>
+</ul></li>
+</ul>
+
+<img data-src="figs/glove-table.png" class="r-stretch"></section>
+<section id="glove-from-first-principles-1" class="slide level2">
+<h2>GloVe from first principles</h2>
+<ul>
+<li>The ratio is better able to distinguish relevant words from irrelevant words and it is also better able to discriminate between the two relevant words.</li>
+<li>Above argument suggests starting point for word vector learning should be with ratios of co-occurrence probabilities.</li>
+<li>Most general form <span class="math display">\[\begin{align*}
+  F(w_{i}, w_{j}, \tilde{w}_{k}) = \frac{P_{ik}}{P_{jk}}
+\end{align*}\]</span> where <span class="math inline">\(w_{i}, w_{j} \in \mathbb{R}^{D}\)</span> are word vectors and <span class="math inline">\(\tilde{w}_{k} \in \mathbb{R}^{D}\)</span> is a context vector.</li>
+<li>Want to restrict the form of <span class="math inline">\(F\)</span>.</li>
+<li>First, we want <span class="math inline">\(F\)</span> to represent the information in the ratio in a vector space; a linear structure, which suggests we can use the difference of the target words <span class="math display">\[\begin{align*}
+  F(w_{i} - w_{j}, \tilde{w}_{k}) = \frac{P_{ik}}{P_{jk}}
+\end{align*}\]</span></li>
+</ul>
+</section>
+<section id="glove-from-first-principles-2" class="slide level2">
+<h2>GloVe from first principles</h2>
+<ul>
+<li>LHS input arguments are vectors but RHS is a scalar; take dot product to preserve linear structure (instead of e.g.&nbsp;neural network): <span class="math display">\[\begin{align*}
+  F((w_{i} - w_{j})^{T}\tilde{w}_{k}) = \frac{P_{ik}}{P_{jk}}
+\end{align*}\]</span></li>
+<li>For word-word co-occurrence matrices, the distinction between a word and a context word is arbitrary; can exchange the two roles freely i.e. <span class="math inline">\(w \leftrightarrow \tilde{w}\)</span> and <span class="math inline">\(\mathbf{X} \leftrightarrow \mathbf{X}^{T}\)</span>.</li>
+<li>This symmetry can be enforced by requiring <span class="math inline">\(F\)</span> to be a <a href="https://www.wikiwand.com/en/articles/Homomorphism#Definition">homomorphism</a> (see <a href="https://datascience.stackexchange.com/questions/27042/glove-vector-representation-homomorphism-question">here</a> and <a href="https://math.stackexchange.com/questions/2580647/what-does-homomorphism-mean-in-the-glove-paper">here</a> for two learning souls that came before us) between the two groups <span class="math inline">\((\mathbb{R}, +)\)</span> and <span class="math inline">\((\mathbb{R}_{&gt;0}, \times)\)</span>:</li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+    F((w_{i} - w_{j})^{T}\tilde{w}_{k})
+    =
+    \frac{
+        F(w_{i}^{T}\tilde{w}_{k})
+    }{
+        F(w_{j}^{T}\tilde{w}_{k})
+    }
+\end{align*}\]</span></p>
+</section>
+<section id="glove-from-first-principles-3" class="slide level2">
+<h2>GloVe from first principles</h2>
+<ul>
+<li>Previous results suggests <span class="math display">\[\begin{align*}
+  F(w_{i}^{T}\tilde{w}_{k}) = P_{ik} = \frac{\mathbf{X}_{ik}}{\mathbf{X}_{i}}
+\end{align*}\]</span></li>
+<li>The solution is <span class="math inline">\(F = \exp\)</span>, thus <span class="math display">\[\begin{align*}
+  w_{i}^{T}\tilde{w}_{k} = \log \mathbf{X}_{ik} - \log\mathbf{X}_{i}
+\end{align*}\]</span></li>
+<li>This expression would be symmetric if not for <span class="math inline">\(\log\mathbf{X}_{i}\)</span>; absorbing this into a bias <span class="math inline">\(b_{i}\)</span> for <span class="math inline">\(w_{i}\)</span> and adding a bias <span class="math inline">\(\tilde{b}_{k}\)</span> for <span class="math inline">\(\tilde{w}_{k}\)</span> restores the symmetry: <span class="math display">\[\begin{align*}
+  w_{i}^{T}\tilde{w}_{k} + b_{i} + \tilde{b}_{k} = \log \mathbf{X}_{ik}
+\end{align*}\]</span></li>
+</ul>
+</section>
+<section id="glove-from-first-principles-4" class="slide level2">
+<h2>GloVe from first principles</h2>
+<ul>
+<li>Have</li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+\log \mathbf{X}_{ik} = w_{i}^{T}\tilde{w}_{k} + b_{i} + \tilde{b}_{k}
+\end{align*}\]</span></p>
+<ul>
+<li>We would like not to weigh all co-occurrences equally; i.e.&nbsp;those that happen rarely or never should not have the same weight as those that happen frequently. This can be achieved by weighting the squared error term in resulting cost function: <span class="math display">\[\begin{align*}
+  J = \sum_{i=1}^{V} \sum_{j=1}^{V} f(\mathbf{X}_{ij})
+  \{w_{i}^{T}\tilde{w}_{j} + b_{i} + \tilde{b}_{j} - \log \mathbf{X}_{ij}\}^{2}
+\end{align*}\]</span> where <span class="math inline">\(V\)</span> is the vocabulary size.</li>
+<li>This is the GloVe cost/loss/criterion function derived from first principles; the parameters are estimated by stochastic gradient descent.</li>
+<li>Interestingly, the paper shows how starting from the skip-gram model and improving on its limitations leads to a model that is equivalent to GloVe.</li>
+</ul>
+</section>
+<section id="glove-from-first-principles-5" class="slide level2">
+<h2>GloVe from first principles</h2>
+<ul>
+<li>The general weighting function (fractional power law) equals <span class="math display">\[\begin{align*}
+  f(x) = \begin{cases}
+             (x / x_{max})^{\alpha} &amp; x &lt; x_{max}          \\
+             1               &amp; \text{otherwise}
+         \end{cases}
+\end{align*}\]</span></li>
+<li>The one found to performs best empirically equals: <span class="math display">\[\begin{align*}
+  f(x) = \begin{cases}
+             (x / 100)^{3/4} &amp; x &lt; 100          \\
+             1               &amp; \text{otherwise}
+         \end{cases}
+\end{align*}\]</span></li>
+</ul>
+</section>
+<section id="glove-v" class="slide level2">
+<h2>GloVe-V</h2>
+<ul>
+<li>The GloVe-V model builds upon the GloVe</li>
+<li>We just saw that the GloVe word embedding model learns two embeddings <span class="math inline">\(\mathbf{w}_{k},
+  \mathbf{v}_{k} \in \mathbb{R}^{D}\)</span> for each word <span class="math inline">\(k\)</span>, by minimizing the cost function <span class="math display">\[\begin{align}
+  J = \sum_{i=1}^{V} \sum_{j=1}^{V} f(\mathbf{X}_{ij})
+  \{\mathbf{w}_{i}^{T}\mathbf{v}_{j} + b_{i} + c_{j} - \log
+  \mathbf{X}_{ij}\}^{2}
+\end{align}\]</span> where <span class="math inline">\(b_{i}\)</span> and <span class="math inline">\(c_{j}\)</span> are constant terms associated with word <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>, <span class="math inline">\(f(\mathbf{X}_{ij})\)</span> is a non-negative weighting function</li>
+<li>Note: slight change of notation from here; embedding vectors in boldface and <span class="math inline">\(c_j = \tilde{b}_j\)</span></li>
+<li>The embedding of interest in the GloVe-V paper is <span class="math inline">\(\mathbf{w}_{k}\)</span>; soon to be justified
+<ul>
+<li>The original paper suggested to add the two embeddings to get the final embedding</li>
+</ul></li>
+</ul>
+</section>
+<section id="glove-v-1" class="slide level2">
+<h2>GloVe-V</h2>
+<ul>
+<li>Minimizing the cost function corresponds to estimating the model by weighted least squares (WLS).</li>
+<li>The key insight of the paper is that this optimization problem can be cast as an element-wise weighted low-rank approximation problem and solved in two-step fashion. Write it first in matrix form: <span class="math display">\[\begin{align*}
+   &amp; \min_{\mathbf{b}, \mathbf{c}, \mathbf{W}, \mathbf{V}} \ \Vert \mathbf{F}
+  \odot \mathbf{R} \Vert_{F}                                                  \\
+   &amp; s.t.
+\ \mathbf{R} = \log \mathbf{X} - \mathbf{W}^{T}\mathbf{V} -
+  \mathbf{v}\mathbf{1}^{T} - \mathbf{1}\mathbf{c}^{T}
+  \wedge
+  \mathrm{rank}(\mathbf{W}), \ \mathrm{rank}(\mathbf{V}) \leq D
+\end{align*}\]</span> where <span class="math inline">\(\mathbf{F}_{ij} = \sqrt{f(\mathbf{X}_{ij})}\)</span>, <span class="math inline">\(\mathbf{w}_{i}\)</span> and <span class="math inline">\(\mathbf{v}_{i}\)</span> are the <span class="math inline">\(i\)</span>th column vectors of <span class="math inline">\(\mathbf{W}\)</span> and <span class="math inline">\(\mathbf{V}\)</span>, and <span class="math inline">\(b_{i}\)</span> and <span class="math inline">\(c_{i}\)</span> are the <span class="math inline">\(i\)</span>th elements of <span class="math inline">\(\mathbf{b}\)</span> and <span class="math inline">\(\mathbf{c}\)</span>, and <span class="math inline">\(\odot\)</span> denotes the element-wise product and <span class="math inline">\(\Vert \mathbf{X}  \Vert_{F} = \sqrt{\sum_{i=1}^{V}\sum_{j=1}^{V}|\mathbf{X}_{ij}|^{2}}\)</span> is the Frobenius matrix norm.</li>
+</ul>
+</section>
+<section id="glove-v-2" class="slide level2">
+<h2>GloVe-V</h2>
+<ul>
+<li>This can be solved in a two-step fashion as <span class="math display">\[\begin{align*}
+  \min_{
+      \mathbf{b} \in \mathbb{R}^{V},
+      \mathbf{c} \in \mathbb{R}^{V},
+      \mathbf{V} \in \mathbb{R}^{V \times D}
+  }
+  \min_{\mathbf{W} \in \mathbb{R}^{V \times D}}
+  \ \Vert \mathbf{F}
+  \odot \mathbf{R} \Vert_{F}.
+\end{align*}\]</span></li>
+<li>Here comes the first trick: we can hold the choice of <span class="math inline">\((\mathbf{b},
+\mathbf{c}, \mathbf{V})\)</span> fixed at their globally optimal values <span class="math inline">\((\mathbf{b}^{*}, \mathbf{c}^{*}, \mathbf{V}^{*})\)</span> and solve the inner minimization problem to find the optimal <span class="math inline">\(\mathbf{W}\)</span> (matrix of center vectors; embeddings of interest!).</li>
+<li>This corresponds to solving <span class="math inline">\(V\)</span> weighted least squares problems with solution: <span class="math display">\[\begin{align*}
+  \mathbf{w}_{i}^{*} =
+  (
+  \mathbf{V}_{\mathcal{K}}^{*T}\mathbf{D}_{\mathcal{K}}
+  \mathbf{V}_{\mathcal{K}}^{*}
+  )^{-1}
+  \mathbf{V}_{\mathcal{K}}^{*T}
+  \mathbf{D}_{\mathcal{K}}
+  \{\log \mathbf{x}_{i} - b^{*}_{i} \mathbf{1} - \mathbf{c}^{*}\}
+\end{align*}\]</span> where <span class="math inline">\(\mathcal{K}\)</span> is the set of columns indices with non-zero co-occurences for word <span class="math inline">\(i\)</span>, <span class="math inline">\(\mathbf{V}_{\mathcal{K}}^{*}\)</span> is a matrix whose columns belong to the set <span class="math inline">\(\{\mathbf{v}_{j}^{*} \mid j \in \mathcal{K}\}\)</span>, <span class="math inline">\(\mathbf{D}_{\mathcal{K}} = \mathrm{diag}(\{\mathbf{F}_{ij}^{2} \mid j \in \mathcal{K}\})\)</span>, and <span class="math inline">\(\mathbf{x}_{i}\)</span> is the <span class="math inline">\(i\)</span>th row of the co-occurence matrix <span class="math inline">\(\mathbf{X}\)</span>.</li>
+<li>To the ’metricians; compare <span class="math inline">\(\mathbf{w}_{i}^{*}\)</span> with the usual WLS solution <span class="math inline">\(\hat{\boldsymbol{\beta}} = (X^{T}WX)^{-1}X^{T}W \mathbf{y}\)</span>.</li>
+</ul>
+</section>
+<section id="glove-v-3" class="slide level2">
+<h2>GloVe-V</h2>
+<ul>
+<li>Here comes the second trick: we can write down the probabilistic model for which <span class="math inline">\(\mathbf{w}_{i}^{*}\)</span> is optimal.
+<ul>
+<li>The WLS projection screams a normal model!</li>
+</ul></li>
+<li>Conditional on the optimal context vector subspace spanned by <span class="math inline">\(\mathbf{V}^{*}\)</span> and optimal constant vectors <span class="math inline">\((\mathbf{b}^{*}, \mathbf{c}^{*})\)</span> the model is a weighted multivariate normal model for the rows of <span class="math inline">\(\mathbf{X}\)</span>: <span class="math display">\[\begin{align*}
+  \log \mathbf{x}_{i} = b^{*}_{i} \mathbf{1} + \mathbf{c}^{*}
+  \mathbf{w}_{i}^{T} \mathbf{V}_{\mathcal{K}}^{*} + \mathbf{e}_{i},
+  \ \mathbf{e}_{i} \sim N(\mathbf{0},
+  \mathbf{D}_{\mathcal{K}}^{-1}\sigma_{i}^{2}).
+\end{align*}\]</span></li>
+<li>Because <span class="math inline">\(\mathbf{X}_{ij} &gt; 0\)</span> for <span class="math inline">\(j \in \mathcal{K}\)</span> we always have <span class="math inline">\((\mathbf{D}_{\mathcal{K}})_{ii} &gt; 0\)</span> so the inverse makes sense.</li>
+<li>An assumption made is that the rows of <span class="math inline">\(\log \mathbf{X}\)</span> are independent given the the optimal parameters <span class="math display">\[\begin{align*}
+  \log \mathbf{x}_{i} \mid
+  \mathbf{b}^{*}, \mathbf{c}^{*}, \mathbf{V}_{\mathcal{K}}^{*}
+  \perp\!\!\!\perp
+  \log \mathbf{x}_{j} \mid
+  \mathbf{b}^{*}, \mathbf{c}^{*}, \mathbf{V}_{\mathcal{K}}^{*}
+  \text{ for all } i \neq j.
+\end{align*}\]</span> This corresponds to a random sampling assumption for a weighted normal model in a (classical) statistics setting; (I’ll buy it; just give me embedding standard errors 🚀)</li>
+</ul>
+</section>
+<section id="glove-v-4" class="slide level2">
+<h2>GloVe-V</h2>
+<ul>
+<li>Finally, under standard assumptions for WLS estimators, the covariance matrix for <span class="math inline">\(\mathbf{W}\)</span> simplifies into a <span class="math inline">\(VD \times VD\)</span> block diagonal matrix with <span class="math inline">\(i\)</span>th <span class="math inline">\(D \times D\)</span> block equal to <span class="math display">\[\begin{align*}
+  \boldsymbol{\Sigma}_{i} = \sigma^{2}_{i} \left( \sum_{j \in \mathcal{K}}
+  f(\mathbf{X}_{ij}) \mathbf{v}_{j}^{*}(\mathbf{v}_{j}^{*})^{T} \right)^{-1}
+\end{align*}\]</span></li>
+<li>The reconstruction error for word <span class="math inline">\(i\)</span>, <span class="math inline">\(\sigma_{i}^{2}\)</span>, can be estimated with the plug-in estimator: <span class="math display">\[\begin{align*}
+  \hat{\sigma}^{2}_{i} =
+  \frac{1}{|\mathcal{K}| - D}
+  \sum_{j \in \mathcal{K}}
+  f(\mathbf{X}_{ij})
+  \left(
+  \log \mathbf{X}_{ij} - b^{*}_{i} - c^{*}_{j}
+  - \mathbf{w}_{i}^{*T} \mathbf{v}_{j}^{*}
+  \right)^{2}.
+\end{align*}\]</span> Note that this is only valid for <span class="math inline">\(|\mathcal{K}| &gt; D\)</span>; i.e.&nbsp;for words that co-occur with a greater number of unique context words (<span class="math inline">\(|\mathcal{K}|\)</span>) than the dimensionality of the vectors (<span class="math inline">\(D\)</span>).</li>
+</ul>
+</section>
+<section id="glove-v-5" class="slide level2">
+<h2>GloVe-V</h2>
+<ul>
+<li><p>Conclusively, we have the result for word <span class="math inline">\(i\)</span> <span class="math display">\[\begin{align*}
+  \widehat{\mathbf{w}}_{i} \sim
+  N\left(
+  \mathbf{w}_{i},
+  V^{-1}\widehat{\mathbf{\Sigma}}_{i}
+  \right)
+  \iff
+  \sqrt{V}\left(\widehat{\mathbf{w}}_{i} - \mathbf{w}_{i}\right)
+  \sim
+  N\left(\mathbf{0}, \widehat{\mathbf{\Sigma}}_{i}\right)
+\end{align*}\]</span> and for the full matrix of embeddings <span class="math display">\[\begin{align*}
+  \sqrt{V}\left(\widehat{\mathbf{W}} - \mathbf{W}\right)
+  \sim
+  N\left(\mathbf{0}, \widehat{\mathbf{\Sigma}}\right).
+\end{align*}\]</span></p></li>
+<li><p>With this we can conduct inference on the embeddings; e.g.&nbsp;hypothesis tests and comply with the standard practice in the social and natural sciences :=)</p></li>
+</ul>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+<ul>
+<li>To estimate GloVe-V model we estimate usual GloVe model and then estimate the variance using the plug-in estimator and the formula for the covariance</li>
+</ul>
+
+<img data-src="figs/overview.png" class="r-stretch"></section>
+<section id="word-frequency-and-variance-size" class="slide level2">
+<h2>Word frequency and variance size</h2>
+<ul>
+<li>Method conforms with the intuition that we should be less certain about a word’s position in vector space the less data we have on its co-occurrences in the raw text</li>
+</ul>
+
+<img data-src="figs/freqvar.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="nearest-neighbors-with-uncertainty" class="slide level2">
+<h2>Nearest neighbors with uncertainty</h2>
+<ul>
+<li>Method yields confidence bands for the cosine similarities computed in the figure</li>
+</ul>
+
+<img data-src="figs/nnglove.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><ul>
+<li>Wait a second, how is it actually computed?</li>
+</ul>
+</section>
+<section id="warm-up-cosine-similarity" class="slide level2">
+<h2>Warm-up: Cosine similarity</h2>
+<ul>
+<li>Given embedding vectors <span class="math inline">\(\mathbf{x}, \mathbf{y} \in  \mathbb{R}^{D}\)</span> with angle <span class="math inline">\(\theta\)</span> between them, the cosine similarity, <span class="math inline">\(\mathrm{cos}(\mathbf{x}, \mathbf{y}) \in [-1, 1]\)</span>, is defined as <span class="math display">\[\begin{align}
+  \mathrm{cos}(\mathbf{x}, \mathbf{y}) :=
+  \mathrm{cos}(\theta)
+  = \frac{\mathbf{x}^{T}\mathbf{y}}{\Vert \mathbf{x} \Vert \Vert \mathbf{y} \Vert},
+\end{align}\]</span> where the norm <span class="math inline">\(\Vert \mathbf{x} \Vert = \sqrt{\sum_{i=1}^{D} x_{i}^{2}}\)</span>.</li>
+<li>The derivative of the cosine similarity with respect to <span class="math inline">\(\mathbf{x}\)</span> is <span class="math display">\[\begin{align}
+  \nonumber
+  \frac{\partial}{\partial \mathbf{x}} \mathrm{cos}(\mathbf{x}, \mathbf{y})
+   &amp; =
+  \frac{1}{\Vert \mathbf{x} \Vert \Vert \mathbf{y} \Vert}
+  \frac{\partial}{\partial \mathbf{x}}\mathbf{x}^{T}\mathbf{y}
+  - \frac{\mathrm{cos}(\mathbf{x}, \mathbf{y}) }{\Vert \mathbf{x}\Vert} \cdot
+  \frac{\partial \Vert \mathbf{x} \Vert}{\partial \mathbf{x}}
+  \\
+   &amp; =
+  \label{eq:cosine-derivative}
+  \frac{1}{\Vert \mathbf{x} \Vert \Vert \mathbf{y} \Vert} \mathbf{y}
+  - \frac{\mathrm{cos}(\mathbf{x}, \mathbf{y}) }{\Vert \mathbf{x}\Vert} \cdot
+  \frac{\partial \Vert \mathbf{x} \Vert}{\partial \mathbf{x}}
+\end{align}\]</span> Note that the derivative <span class="math inline">\(\frac{\partial}{\partial \mathbf{x}} \mathrm{cos}(\mathbf{x}, \mathbf{y})\)</span> is <span class="math inline">\(D \times 1\)</span> dimensional (we take is as a column vector).</li>
+</ul>
+</section>
+<section id="delta-method" class="slide level2">
+<h2>Delta method</h2>
+<ul>
+<li><p>The Delta Method states that if <span class="math inline">\(\sqrt{V}\left(\widehat{\mathbf{W}} - \mathbf{W}\right)\)</span> converges to <span class="math inline">\(N\left( \mathbf{0}, \widehat{\mathbf{\Sigma}} \right)\)</span>, then for <span class="math inline">\(\phi(\cdot)\)</span> a differentiable function of <span class="math inline">\(\mathbf{W}\)</span> it holds <span class="math display">\[\begin{align*}
+  \sqrt{V}(\phi(\widehat{\mathbf{W}}) - \phi(\mathbf{W}))
+  \sim  N(
+  \mathbf{0},
+  \phi^{\prime}(\widehat{\mathbf{W}})^T
+  \widehat{\mathbf{\Sigma}}
+  \phi^{\prime}(\widehat{\mathbf{W}})
+  )
+\end{align*}\]</span> where <span class="math inline">\(\phi^{\prime}(\cdot)\)</span> is its gradient with respect to <span class="math inline">\(\mathbf{W}\)</span>.</p></li>
+<li><p>The cosine similarity is a transformation of the estimated embedding matrix <span class="math inline">\(\widehat{\mathbf{W}}\)</span> i.e. <span class="math display">\[\begin{align*}
+  \phi(\widehat{\mathbf{W}})
+  =
+  \mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k})
+\end{align*}\]</span></p></li>
+<li><p>Defining <span class="math inline">\(\mathbf{d}_{j} := \frac{\partial}{\partial \mathbf{w}_{j}} \mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k})\)</span> the variance of <span class="math inline">\(\phi(\widehat{\mathbf{W}})\)</span> equals</p></li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+    \mathrm{var}\{\phi(\widehat{\mathbf{W}})\}
+    =
+    \phi^{\prime}(\widehat{\mathbf{W}})^T
+    \widehat{\mathbf{\Sigma}}
+    \phi^{\prime}(\widehat{\mathbf{W}})
+    =
+    \sum_{i \in \{j, k\}}
+    \mathbf{d}_{i}^{T}
+    \widehat{\mathbf{\Sigma}_{i}}
+    \mathbf{d}_{i}
+\end{align*}\]</span></p>
+</section>
+<section id="delta-method-continuned" class="slide level2">
+<h2>Delta method continuned</h2>
+<ul>
+<li>Thus, we have the distributional result: <span class="math display">\[\begin{align*}
+  \mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k})
+  \sim N\left(
+  \mathrm{cos}(\mathbf{w}_{j}, \mathbf{w}_{k}),
+  V^{-1}
+  \mathrm{var}(\mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k}))
+  \right)
+\end{align*}\]</span></li>
+<li>With this we can conduct inference, e.g.&nbsp;<span class="math inline">\(t\)</span>-test as <span class="math display">\[\begin{align*}
+  t_{
+  \mathrm{cos}(\mathbf{w}_{j}, \mathbf{w}_{k}) = \mu
+  }
+  :=
+  \frac{
+      \mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k})
+      - \mu
+  }{
+      \mathrm{se}(\mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k}))
+  }.
+\end{align*}\]</span> and confidence intervals as <span class="math display">\[\begin{align*}
+\mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k})
+\pm
+z_{1-\alpha/2}
+\mathrm{se}(\mathrm{cos}(\hat{\mathbf{w}}_{j}, \hat{\mathbf{w}}_{k}))
+\end{align*}\]</span></li>
+</ul>
+</section>
+<section id="nearest-neighbors-with-uncertainty-1" class="slide level2">
+<h2>Nearest neighbors with uncertainty</h2>
+<blockquote>
+<p>For the top three neighbors (and between neighbours 4 through 10), cannot statistically distinguish the ranks (e.g., p = 0.10 for the difference in the cosine similarity of “doctor” and “surgeon” relative to that of “doctor” and “dentist”)</p>
+</blockquote>
+<blockquote>
+<p>Which neighbor is the “nearest” is therefore subject to considerable uncertainty that would be invisible without incorporation of the GloVe-V variances.</p>
+</blockquote>
+
+<img data-src="figs/nnglove.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="glove-v-vs-ad-hoc-document-bootstrap" class="slide level2">
+<h2>GloVe-V vs ad-hoc document bootstrap</h2>
+
+<img data-src="figs/glovedoc.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="gender-bias-uncertainty" class="slide level2">
+<h2>Gender bias uncertainty</h2>
+<blockquote>
+<p>Using GloVe-V, low and high frequency words can be seamlessly combined into a single bias interval that represents the combined uncertainty in all the estimated word positions (shown as a gray interval on the plot), without having to drop any surnames and sacrifice generalizability</p>
+</blockquote>
+
+<img data-src="figs/genderbias.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="gender-bias-uncertainty-1" class="slide level2">
+<h2>Gender bias uncertainty</h2>
+<blockquote>
+<p>The GloVe-V intervals allow us to reject the null that (a) is equal to (b) (p &lt; 0.001), but not the null that (a) is equal to (c) (p = 0.11). In this case, the GloVe-V intervals guard against making unsubstantiated claims about which types of bias are strongest.</p>
+</blockquote>
+
+<img data-src="figs/genderbias.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="limitations" class="slide level2">
+<h2>Limitations</h2>
+<blockquote>
+
+<ul>
+<li>The variances can only be computed for words whose number of context words exceeds the embedding dimensionality</li>
+<li>Researchers need access to the cooccurrence matrix if they wish to compute the variances themselves, since it relies on an empirical estimate of the reconstruction error.</li>
+<li>The methodology in this paper applies solely to the GloVe embedding model</li>
+<li>Finally, the uncertainty captured by GloVe-V intervals is due to sparsity in the underlying cooccurrence matrix, which is only one of many types of uncertainty one could consider in embedded locations for words. Other types of uncertainty that are held fixed in GloVe-V include
+<ul>
+<li>instability due to the documents included in the corpus</li>
+<li>uncertainty due to the hyper-parameters of the model</li>
+<li>statistical uncertainty in the estimated context vector positions and bias terms, which are treated as constants in the variance computation for computational tractability.</li>
+</ul></li>
+</ul>
+
+</blockquote>
+</section>
+<section id="conclusion" class="slide level2">
+<h2>Conclusion</h2>
+<blockquote>
+<p>The GloVe-V variances provide researchers with the ability to easily propagate uncertainty in the word embeddings to downstream test statistics of interest, such as word similarity metrics that are used in both evaluation and analyses involving word embeddings.</p>
+</blockquote>
+<blockquote>
+<p>Finally, while outside the scope of the current study, we note that the contextual word and passage representations of transformer large language models are also point estimates and similar questions of embedding uncertainty apply when using such models as well.</p>
+</blockquote>
+<ul>
+<li>Also check out the authors <a href="https://github.com/reglab/glove-v">gh-repo</a></li>
+</ul>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="slides_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="slides_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="slides_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="slides_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="slides_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="slides_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="slides_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="slides_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="slides_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="slides_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
