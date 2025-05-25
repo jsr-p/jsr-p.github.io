@@ -1,0 +1,210 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px; /* base font size */
+  background: #fefefe;
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+}
+
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 745px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  background: #fefefe;
+}
+
+main {
+  flex: 1; /* pushes footer to bottom when space available */
+}
+
+/*  Navbar - only applies to <nav class="page-nav">  */
+
+nav.page-nav {
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+nav.page-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav.page-nav li {
+  margin: 0;
+}
+
+nav.page-nav a {
+  font-size: 14px;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+nav.page-nav a:hover {
+  background-color: #e0e0e0;
+}
+
+nav.page-nav a.active {
+  background-color: #dde8ff; /* soft blue-grey */
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  nav.page-nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  nav.page-nav a {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  pre.sourceCode {
+    font-size: 14px;
+  }
+
+  p,
+  li {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/*  Footer  */
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid black;
+  font-size: 13px;
+}
+
+footer p {
+  font-size: inherit;
+  margin: 0;
+}
+
+h1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  padding: 5px;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+pre.sourceCode {
+  background-color: #f6f8fa;
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9em;
+  font-size: 16px;
+}
+
+/* Optional for better alignment with KaTeX spacing */
+.math.display {
+  display: block;
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.copy-button {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75em;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 12px;
+}
+.copy-button:hover {
+  opacity: 1;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 0.5em;
+}
+
+/*  math stuff  */
+
+.math.display {
+  display: block;
+  text-align: center;
+  max-width: 110%;
+}
+
+/*  overflow on mobiles  */
+@media (max-width: 768px) {
+  .math.display {
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 0.5em;
+  }
+
+  .math.display > .katex-display {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+}

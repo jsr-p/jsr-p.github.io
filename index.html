@@ -1,15 +1,98 @@
-<p>Greetings!</p>
-<div>
-  <li>I'm Jonas; a PhD student at <a href="https://sodas.ku.dk/">SODAS</a></li>
-  <li>Check out:</li>
-  <ul>
-    <li>
-      <a href="https://github.com/jsr-p">My github</a>
-    </li>
-    <li>
-      <a href="https://jsr-p.github.io/slides/">Misc. Slides</a>
-    </li>
-  </ul>
-</div>
 
-Peace out and <a href="https://jsr-p.github.io/vimmin/">stay vimmin'</a>
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Home</title>
+        <link href="/static/styles/style.css"
+              rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+              rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div class="page">
+            
+            <nav class = "page-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="/"
+                               class="active">Home</a>
+                        </li>
+                    
+                        <li>
+                            <a href="/posts/"
+                               class="">Posts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="/stuff/"
+                               class="">Stuff</a>
+                        </li>
+                    
+                </ul>
+            </nav>
+            <main>
+                
+    <p>Greetings!</p>
+    <div>
+        <li>
+            I'm Jonas; a PhD student at <a href="https://sodas.ku.dk/">SODAS</a>
+        </li>
+        <li>Check out:</li>
+        <ul>
+            <li>
+                <a href="/stuff/">Some of my stuff</a>
+            </li>
+            <li>
+                <a href="https://github.com/jsr-p">My github</a>
+            </li>
+            <li>
+                <a href="/slides/">Misc. Slides</a>
+            </li>
+        </ul>
+        <p>
+            Peace out, <a href="/vimmin/">stay vimmin'</a>
+            and <a href="ftwr">FTWR</a>
+        </p>
+    </div>
+
+            </main>
+            <footer>
+                <p>© 2025 jsr-p</p>
+                <!-- 
+    
+        <a href="/?mode=dark">Switch to Dark Mode</a>
+    
+ -->
+            </footer>
+        </div>
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("div.sourceCode").forEach((block, i) => {
+    // Create copy button
+    const button = document.createElement("button");
+    button.innerText = "Copy";
+    button.className = "copy-button";
+    button.style.position = "absolute";
+    button.style.top = "0.4em";
+    button.style.right = "0.4em";
+
+    // Wrap position relative to anchor button
+    block.style.position = "relative";
+    block.appendChild(button);
+
+    button.addEventListener("click", () => {
+      const code = block.querySelector("code").innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => button.innerText = "Copy", 1500);
+      });
+    });
+  });
+});
+        </script>
+    </body>
+</html>

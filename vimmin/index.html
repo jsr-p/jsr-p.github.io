@@ -1,12 +1,88 @@
-<h1>Vim musings</h1>
-<ul>
-  <li>
-    <a href="https://jsr-p.github.io/vimmin/2">Musing 2</a>
-  </li>
-  <li>
-    <a href="https://jsr-p.github.io/vimmin/1">Musing 1</a>
-  </li>
-  <li>
-    <a href="https://jsr-p.github.io/PechaKucha/">Musing 0</a>
-  </li>
-</ul>
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Vim musings</title>
+        <link href="/static/styles/style.css"
+              rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+              rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div class="page">
+            
+            <nav class = "page-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="/"
+                               class="">Home</a>
+                        </li>
+                    
+                        <li>
+                            <a href="/posts/"
+                               class="">Posts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="/stuff/"
+                               class="">Stuff</a>
+                        </li>
+                    
+                </ul>
+            </nav>
+            <main>
+                
+    <h1>Vim musings</h1>
+    <ul>
+        <li>
+            <a href="/vimmin/2">Musing 2</a>
+        </li>
+        <li>
+            <a href="/vimmin/1">Musing 1</a>
+        </li>
+        <li>
+            <a href="https://jsr-p.github.io/PechaKucha/">Musing 0</a>
+        </li>
+    </ul>
+
+            </main>
+            <footer>
+                <p>© 2025 jsr-p</p>
+                <!-- 
+    
+        <a href="/vimmin/?mode=dark">Switch to Dark Mode</a>
+    
+ -->
+            </footer>
+        </div>
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("div.sourceCode").forEach((block, i) => {
+    // Create copy button
+    const button = document.createElement("button");
+    button.innerText = "Copy";
+    button.className = "copy-button";
+    button.style.position = "absolute";
+    button.style.top = "0.4em";
+    button.style.right = "0.4em";
+
+    // Wrap position relative to anchor button
+    block.style.position = "relative";
+    block.appendChild(button);
+
+    button.addEventListener("click", () => {
+      const code = block.querySelector("code").innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => button.innerText = "Copy", 1500);
+      });
+    });
+  });
+});
+        </script>
+    </body>
+</html>

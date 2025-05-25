@@ -1,24 +1,94 @@
-<h1>Slides:</h1>
-<ul>
-  <li>
-    <a href="https://jsr-p.github.io/slides/super-learner-tl/">SL</a>
-  </li>
-  <li>
-    <a href="https://jsr-p.github.io/slides/data-sprint-feb25/"
-      >SODAS Data Sprint Feb25</a
-    >
-  </li>
-  <li>
-    <a href="https://jsr-p.github.io/slides/nationscale6/"
-      >N-S reading club 6</a
-    >
-  </li>
-  <li>
-    <a href="https://jsr-p.github.io/slides/nationscale1/"
-      >N-S reading club 1</a
-    >
-  </li>
-  <li>
-    <a href="https://jsr-p.github.io/PechaKucha/">PechaKucha Vim</a>
-  </li>
-</ul>
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>slides</title>
+        <link href="/static/styles/style.css"
+              rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans"
+              rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div class="page">
+            
+            <nav class = "page-nav">
+                <ul>
+                    
+                        <li>
+                            <a href="/"
+                               class="">Home</a>
+                        </li>
+                    
+                        <li>
+                            <a href="/posts/"
+                               class="">Posts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="/stuff/"
+                               class="">Stuff</a>
+                        </li>
+                    
+                </ul>
+            </nav>
+            <main>
+                
+    <h1>Slides</h1>
+    <ul>
+        <li>
+            <a href="/slides/super-learner-tl/">SL</a>
+        </li>
+        <li>
+            <a href="/slides/data-sprint-feb25/">SODAS Data Sprint Feb25</a>
+        </li>
+        <li>
+            <a href="/slides/nationscale6/">N-S reading club 6</a>
+        </li>
+        <li>
+            <a href="/slides/nationscale1/">N-S reading club 1</a>
+        </li>
+        <li>
+            <a href="https://jsr-p.github.io/PechaKucha/">PechaKucha Vim</a>
+        </li>
+    </ul>
+
+            </main>
+            <footer>
+                <p>© 2025 jsr-p</p>
+                <!-- 
+    
+        <a href="/slides/?mode=dark">Switch to Dark Mode</a>
+    
+ -->
+            </footer>
+        </div>
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("div.sourceCode").forEach((block, i) => {
+    // Create copy button
+    const button = document.createElement("button");
+    button.innerText = "Copy";
+    button.className = "copy-button";
+    button.style.position = "absolute";
+    button.style.top = "0.4em";
+    button.style.right = "0.4em";
+
+    // Wrap position relative to anchor button
+    block.style.position = "relative";
+    block.appendChild(button);
+
+    button.addEventListener("click", () => {
+      const code = block.querySelector("code").innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        button.innerText = "Copied!";
+        setTimeout(() => button.innerText = "Copy", 1500);
+      });
+    });
+  });
+});
+        </script>
+    </body>
+</html>
